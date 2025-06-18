@@ -1,0 +1,166 @@
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
+
+.wobble-wrapper {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 320px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: visible;
+
+  z-index: 999;
+}
+
+/* MAIN CARD */
+.card {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #292929cc 0%, #191919ee 60%);
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 2px 2px 0 #e7c4a088, inset 0 -2px 2px 0 #0003;
+  color: #ccc;
+  text-shadow: 1px 1px 3px #333a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  z-index: 1;
+}
+
+
+.card h2 {
+  font-size: 1em;
+  margin-top: 80px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 0.8em;
+  color: #bbb;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* GLOW BUTTON */
+.glow-button {
+  background: #00ffc3;
+  color: #000;
+  font-weight: 600;
+  padding: 6px 24px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffc3aa;
+  font-size: 0.8em;
+}
+
+.glow-button:hover {
+  background: #00e6b3;
+  box-shadow: 0 0 20px #00ffc3, 0 0 40px #00ffc3aa;
+}
+
+/* ACCENT CARDS */
+.accents {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.acc-card {
+  width: 320px;
+  height: 280px;
+  background: #eee1;
+  opacity: 0.8;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  box-shadow: inset 0 2px 2px 0 #e0c9b266, inset 0 -2px 2px 0 #0004;
+  backdrop-filter: blur(4px);
+  transform-origin: 20% 80%;
+  transform: translate(0, 0);
+}
+
+.acc-card:nth-of-type(1) {
+  animation: wobble 18s ease-in-out infinite;
+}
+.acc-card:nth-of-type(2) {
+  animation: wobble 22s ease-in-out -6s infinite reverse;
+}
+.acc-card:nth-of-type(3) {
+  animation: wobble 26s ease-in-out -18s infinite;
+}
+
+/* LIGHT ORBS */
+.light {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ef/Light_gray_circle.svg");
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  animation: rotate360 22s linear infinite;
+}
+
+.light.sm {
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 20px;
+  animation: rotate360 18s linear -10s infinite;
+}
+
+.light::before,
+.light::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  left: 0;
+  top: 0;
+  margin: auto;
+  filter: blur(3px);
+  transform: scale(1.01);
+}
+
+.light::after {
+  filter: blur(8px);
+}
+
+/* ANIMATIONS */
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: translate(0, 0) rotate(-3deg) scale(1);
+  }
+  20% {
+    transform: translate(-12px, -6px) rotate(3deg) scale(1.02);
+  }
+  60% {
+    transform: translate(10px, 8px) rotate(-4deg) scale(1);
+  }
+  80% {
+    transform: translate(-10px, -10px) rotate(6deg) scale(0.96);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-3deg) scale(1);
+  }
+}
