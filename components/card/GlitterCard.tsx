@@ -8,7 +8,7 @@ const GlitterCard = () => {
     <section className="glitter-section -mt-48 min-h-screen w-full flex justify-center items-center overflow-hidden relative">
       <div className="glitter-container relative flex justify-center items-center">
         <aside className="card-front">
-          <label className="number">MODERNIE</label>
+          <label className="number ">MODERNIE</label>
           <label className="name text-center mt-5">Smarter Solutions for a Digital World</label>
 
           {/* <img

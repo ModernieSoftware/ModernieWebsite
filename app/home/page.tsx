@@ -123,8 +123,8 @@ export default function HomePageContent() {
       />
 </div>
 <div id="product">
-      <h1 className="text-7xl font-passion font-bold  text-center">Our Products</h1>
-      <p className="text-gray-600 text-center text-lg ">
+      <h1 className="md:text-7xl md:-mt-2 mt-12  text-5xl font-passion font-bold  text-center">Our Products</h1>
+      <p className="text-gray-600 text-center mt-5 text-lg mx-5 ">
         Together, lets build a smarter future powered by intelligent systems and creative technology.
       </p>
 <AppleCardsCarouselDemo/>

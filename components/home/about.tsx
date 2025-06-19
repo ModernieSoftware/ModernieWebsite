@@ -24,9 +24,9 @@ export default function AboutSection() {
         transition={{ duration: 1, ease: 'easeOut' }}
         className="max-w-7xl mx-auto  rounded-3xl  overflow-hidden shadow-lg"
       >
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center -top-24">
           {/* Background Image */}
-          <div className="relative w-full md:w-1/2 h-[300px] md:h-[800px]">
+          <div className="relative w-full md:w-1/2 h-[500px] md:h-[800px]">
             <Image 
               src="/img/test.png" 
               alt="Astronaut working"

@@ -40,7 +40,7 @@ export default function OurServices() {
   return (
     <section className="py-20 bg-gradient-to-b  text-white">
       <div className="max-w-7xl mx-auto px-4 text-center sm:px-6 lg:px-8">
-        <h1 className="text-7xl font-passion font-bold mb-6">Our Services</h1>
+        <h1 className="md:text-7xl text-5xl font-passion font-bold mb-6">Our Services</h1>
         <p className="text-gray-400 text-lg mb-12 max-w-3xl mx-auto">
           Together, lets build a smarter future powered by intelligent systems, cloud innovation, and creative technology.
         </p>

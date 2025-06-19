@@ -68,18 +68,46 @@
 }
 
 .number {
-   top: 20px;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-size: clamp(6rem, 14vw - 3.5rem, 6.5rem);
 }
 
+/* Adjusting for smaller screens */
+@media (max-width: 768px) {
+  .number {
+    top: 25%; /* Adjust position for better visibility */
+    font-size: clamp(4rem, 10vw - 2rem, 5rem); /* Scale font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .number {
+    top: 30%; /* Further adjustment for very small screens */
+    font-size: clamp(3rem, 8vw - 1.5rem, 4.5rem); /* Further reduce font size */
+  }
+}
+
 .name {
- 
   bottom: 30%;
   left: 5%;
   font-size: clamp(1.4rem, 3.8vw + 1.2rem, 2.1rem);
+}
+
+/* Adjusting for smaller screens */
+@media (max-width: 768px) {
+  .name {
+    bottom: 20%; /* Adjust position for better visibility */
+    font-size: clamp(1.2rem, 3.5vw + 1rem, 1.8rem); /* Scale font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    bottom: 15%; /* Further adjustment for very small screens */
+    font-size: clamp(1rem, 3vw + 1rem, 1.5rem); /* Further reduce font size */
+  }
 }
 
 .cardLogo {
