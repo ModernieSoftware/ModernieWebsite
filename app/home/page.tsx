@@ -26,6 +26,7 @@ import GlitterCard from '@/components/card/GlitterCard';
 
 import { CarouselDemo } from '@/components/home/carosal';
 import { AppleCardsCarouselDemo } from '@/components/home/product';
+import ComingSoonOverlay from '@/components/comingsoon/ComingSoonOverlay';
 
 const features = [
   { title: 'AI-Driven Analytics', description: 'Harness the power of artificial intelligence for deep insights' },
@@ -71,6 +72,7 @@ export default function HomePageContent() {
 
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
+      <ComingSoonOverlay/>
       <NavbarDemo />
       <div className="relative min-h-screen bg-black text-white px-4 sm:px-8 md:px-12">
         <div className="absolute z-30 w-[600px] h-[600px] bg-blue-700 blur-[160px] opacity-40 rounded-full -top-20 -right-40 "></div>

@@ -12,7 +12,7 @@ export default function ComingSoonOverlay() {
       {/* <SplashCursor /> */}
       <Vortex
         backgroundColor="transparent"
-        className="flex items-center  flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+        className="flex items-center  flex-col justify-center px-2 md:px-10 w-full h-full"
       >
       {/* Logo */}
       <div className="w-full flex justify-center items-center mt-4 md:mt-4">
@@ -34,7 +34,7 @@ export default function ComingSoonOverlay() {
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 leading-relaxed">
           We’re building a bold new experience that blends creativity, intelligence,
           and innovation. <br className="hidden md:block" />
-          Buckle up—your next favorite digital solution is on its way.
+          Buckle up your next favorite digital solution is on its way.
         </p>
 
         <p className="text-xs sm:text-sm md:text-base text-gray-500 italic">
