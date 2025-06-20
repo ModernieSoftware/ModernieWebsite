@@ -71,14 +71,14 @@ function Navbar({ className }: { className?: string }) {
 
       <li>
         <details className="cursor-pointer">
-          <summary className="flex justify-between items-center"  onClick={() => { window.location.href = '/products'; setMobileMenuOpen(false); }}>Products</summary>
+          <summary className="flex justify-between items-center"  onClick={() => { window.location.href = '/#products'; setMobileMenuOpen(false); }}>Products</summary>
         
         </details>
       </li>
 
       <li>
         <details className="cursor-pointer">
-          <summary className="flex justify-between items-center"  onClick={() => { window.location.href = '/services'; setMobileMenuOpen(false); }}>Services</summary>
+          <summary className="flex justify-between items-center"  onClick={() => { window.location.href = '/#services'; setMobileMenuOpen(false); }}>Services</summary>
          
         </details>
       </li>
