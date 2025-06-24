@@ -13,7 +13,7 @@ import { useRouter } from 'next/navigation';
 
 const contactInfo = [
   { icon: <Mail className="h-6 w-6" />, title: "Email", value: "info@modernie.lk " },
-  { icon: <Phone className="h-6 w-6" />, title: "Phone", value: "0117 388 388" },
+  // { icon: <Phone className="h-6 w-6" />, title: "Phone", value: "0117 388 388" },
   { icon: <MapPin className="h-6 w-6" />, title: "Office", value: "545 Sri Sangaraja Mawatha, Colombo 01000" }
 ];
 
