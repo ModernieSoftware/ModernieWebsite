@@ -1,9 +1,9 @@
 // app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+
+
 
 export const metadata: Metadata = {
   title: 'MODERNIE - Shaping Tomorrow\'s Technology',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'MODERNIE - Shaping Tomorrow\'s Technology',
-    description: 'Enterprise-grade SaaS platform powered by AI and cloud computing',
+    description: 'FinTech-specialized software company delivering secure, scalable, and AI-powered SaaS platforms for banking, payments, wealth management, and digital finance innovation',
     url: 'https://www.modernie.lk',
     siteName: 'MODERNIE',
     images: [
@@ -61,35 +61,39 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "MODERNIE",
-            "url": "https://modernie.lk/",
-            "logo": "https://modernie.lk/logo.png",
-            "sameAs": [
-             
-              "https://www.linkedin.com/company/modernie"
-            ],
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "email": "info@modernie.lk",
-              "contactType": "Customer Support",
-              "areaServed": "US"
-            }
-          })}
-        </script>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MODERNIE",
+      "url": "https://modernie.lk/",
+      "logo": "https://modernie.lk/logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/modernie",
+        "https://web.facebook.com/modernie/?_rdc=1&_rdr#"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@modernie.lk",
+        "contactType": "Customer Support",
+        "areaServed": "US"
+      }
+    })
+  }}
+></script>
+
 
         {/* Favicons */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png" />
+    
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={inter.className}>
+      <body >
         {children}
       </body>
     </html>

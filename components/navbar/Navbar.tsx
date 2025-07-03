@@ -19,7 +19,7 @@ export function NavbarDemo() {
         // At top of page
         setShowNavbar(true);
       } else if (currentScrollY > lastScrollY) {
-        // Scrolling down
+        // Scrolling downfdown
         setShowNavbar(false);
       } else {
         // Scrolling up
@@ -60,7 +60,7 @@ function Navbar({ showNavbar }: { showNavbar: boolean }) {
           <MenuItem setActive={setActive} active={active} item="Services" href="/#services" />
           <div className="px-2 flex items-center">
             <Image
-              src="/img/About Us (6).png"
+              src="/img/favicon-32x32.png"
               alt="Company Logo"
               width={120}
               height={40}
@@ -82,7 +82,7 @@ function Navbar({ showNavbar }: { showNavbar: boolean }) {
           )}
         >
           <Image
-            src="/img/About Us (6).png"
+            src="/img/favicon-32x32.png"
             alt="Company Logo"
             width={100}
             height={35}
@@ -100,7 +100,7 @@ function Navbar({ showNavbar }: { showNavbar: boolean }) {
           {/* Header */}
           <div className="flex items-center justify-between mb-12">
             <Image
-              src="/img/About Us (2).png"
+              src="/img/favicon-32x32.png"
               alt="Company Logo"
               width={120}
               height={40}
