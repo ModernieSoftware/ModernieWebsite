@@ -52,7 +52,7 @@ export default function HomePageContent() {
       const result = await emailjs.sendForm(serviceID, templateID, form.current, publicKey);
       console.log("✅ Email sent:", result);
       alert("✅ Message sent successfully!");
-      router.push("/");
+      // router.push("/");
     } catch (error: any) {
       console.error("❌ EmailJS error:", error);
       alert(`❌ Failed to send message: ${error?.text || error?.message || JSON.stringify(error)}`);
