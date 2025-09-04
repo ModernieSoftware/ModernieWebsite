@@ -47,19 +47,35 @@ export default function Careers() {
             viewport={{ once: true }}
             className="p-8 md:p-12 rounded-3xl shadow-xl text-center border border-gray-700"
           >
-            <h2 className="text-4xl font-bold mb-6">Currently No Open Positions</h2>
-            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              We appreciate your interest. Currently, there are no open roles. However, we’re always excited to connect with talented individuals for future opportunities.
-            </p>
-            <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
-              Stay connected for upcoming opportunities. Follow us on our <span className="font-semibold text-white">Website</span>, 
-              <span className="font-semibold text-white"> Facebook</span>, and <span className="font-semibold text-white"> LinkedIn</span>.
-            </p>
+         <div className="flex flex-col items-center text-center">
+           {/* Title */}
+  <h2 className="text-4xl font-bold mb-6">
+    We’re Hiring: Data Scientist
+  </h2>
 
-            {/* CTA Button */}
-            <div className="inline-block px-8 py-3 bg-gradient-to-r from-gray-800 to-gray-600 text-white rounded-lg shadow-md hover:scale-105 transition duration-300 cursor-pointer">
-              Get In Touch
-            </div>
+    {/* Description */}
+  <p className="text-gray-400 mb-6 max-w-2xl">
+    Join our FinTech-driven team to work on secure, scalable, and AI-powered SaaS platforms in banking, payments, and wealth management.
+  </p>
+
+  {/* Flyer Image */}
+  <img
+    className="w-3/4 max-w-lg mb-6"
+    src="/img/careers/datascience.png"
+    alt="Data Scientist Flyer"
+  />
+
+ 
+
+
+  {/* Call to Action */}
+   <a
+    href="mailto:info@modernie.lk"
+    className="px-6 py-3 bg-white text-black hover:bg-gray-200 font-semibold rounded-xl shadow-md transition"
+  >
+    Apply via Email
+  </a>
+</div>
 
             {/* Social Media Section */}
             <div className="mt-12 flex items-center justify-center gap-8 text-lg">
